@@ -12,7 +12,7 @@ export class AuthController {
 
   @Post('register')
   register(@Body() oRegisterDto: RegisterDto) {
-    // return this.authService.register(oRegisterDto); 
-    return oRegisterDto;
+    return this.authService.register(oRegisterDto); 
+    // return oRegisterDto;
   }
 }
